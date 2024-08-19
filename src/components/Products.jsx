@@ -5,7 +5,7 @@ import useHttp from "../Hooks/useHttp";
 const requestConfig ={}
 export default function Products() {
 
-  const {data: availableMeals,isLoading,error} = useHttp('http://localhost:3000/meals',requestConfig,[])
+  const {data: availableMeals,isLoading,error} = useHttp('https://food-order-app-backend-6w66.onrender.com/meals',requestConfig,[])
 
   if (error) {
     return <Error title='Failed to fetch meals' message={error} />;

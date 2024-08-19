@@ -25,7 +25,7 @@ export default function CheckOut() {
     error,
     sendRequest,
     clearData
-  } = useHttp("http://localhost:3000/orders", requestConfig);
+  } = useHttp("https://food-order-app-backend-6w66.onrender.com/orders", requestConfig);
   function handleSubmit(event) {
     event.preventDefault();
 
